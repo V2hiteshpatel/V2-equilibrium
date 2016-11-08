@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ETB_DWModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Brand">
+    <Key>
+      <PropertyRef Name="Alternatekey1" />
+    </Key>
+    <Property Name="Alternatekey1" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Brand1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="CountryID" />
+    </Key>
+    <Property Name="CountryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CountryName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CountryCode" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ProductManager">
+    <Key>
+      <PropertyRef Name="ProductManagerSK" />
+    </Key>
+    <Property Name="ProductManagerSK" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductManager1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductSK" />
+    </Key>
+    <Property Name="ProductSK" Type="Int32" Nullable="false" />
+    <Property Name="StockCode" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Brand" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Segment" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="BasicSKU" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="ProductManager" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ProductClass" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ProductClassDesc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SupplierPartNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DepartmentName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DepartmentNumber" Type="Int32" />
+    <Property Name="CountryCode" Type="String" MaxLength="8" FixedLength="true" Unicode="false" />
+    <Property Name="PalletQty" Type="Decimal" Precision="10" Scale="3" />
+    <Property Name="FinishedGoodFlag" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="EconomicBatchQty" Type="Decimal" Precision="10" Scale="3" />
+    <Property Name="DateSKUAdded" Type="DateTime" Precision="0" />
+    <Property Name="LeadTime" Type="Decimal" Precision="3" Scale="0" />
+    <Property Name="UnitOfMeasure" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="UnitCost" Type="Decimal" Precision="16" Scale="5" />
+    <Property Name="ABCCode" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="FirstSalesOrderDate" Type="DateTime" Precision="0" />
+    <Property Name="FirstSalesOrderQty" Type="Decimal" Precision="10" Scale="3" />
+    <Property Name="FirstSalesOrderCust" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="LastSalesOrderDate" Type="DateTime" Precision="0" />
+    <Property Name="LastSalesOrderQty" Type="Decimal" Precision="10" Scale="3" />
+    <Property Name="LastSalesOrderCust" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="LastInvoiceDate" Type="DateTime" Precision="0" />
+    <Property Name="LastInvoiceQty" Type="Decimal" Precision="10" Scale="3" />
+    <Property Name="LastInvoiceCust" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="AuditIsInferred" Type="Boolean" />
+    <Property Name="ConvFactAltUom" Type="Decimal" Precision="10" Scale="6" />
+    <Property Name="FirstInvoiceDate" Type="DateTime" Precision="0" />
+    <Property Name="FirstInvoiceQty" Type="Decimal" Precision="10" Scale="3" />
+    <Property Name="FirstInvoiceCust" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="SupplierName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="SupplierContact" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LastPOEntryDate" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityContainer Name="ETB_DWEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Brand" EntityType="Self.Brand" />
+    <EntitySet Name="Country" EntityType="Self.Country" />
+    <EntitySet Name="ProductManager" EntityType="Self.ProductManager" />
+    <EntitySet Name="Product" EntityType="Self.Product" />
+  </EntityContainer>
+</Schema>

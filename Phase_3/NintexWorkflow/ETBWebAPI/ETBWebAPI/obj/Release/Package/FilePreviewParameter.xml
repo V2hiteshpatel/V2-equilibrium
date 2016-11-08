@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="ETBWebAPI" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\Hitesh\\Equilibrium\\ETBWebAPI\\ETBWebAPI\\ETBWebAPI\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\Hitesh\\Equilibrium\\ETBWebAPI\\ETBWebAPI\\ETBWebAPI\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="ETB_DWEntities-Web.config Connection String" description="" value="metadata=res://*/ETBModel.csdl|res://*/ETBModel.ssdl|res://*/ETBModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=STG-SQL-01\ETBROWNESQL;initial catalog=ETB_DW;persist security info=True;user id=sa;password=Tyla1212);MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Hitesh\\Equilibrium\\ETBWebAPI\\ETBWebAPI\\ETBWebAPI\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ETB_DWEntities']/@connectionString" />
+  </parameter>
+</parameters>

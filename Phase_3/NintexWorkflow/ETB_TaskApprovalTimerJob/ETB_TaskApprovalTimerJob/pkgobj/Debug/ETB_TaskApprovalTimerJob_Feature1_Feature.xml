@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" AlwaysForceInstall="TRUE" Id="13ca342a-89cf-49a8-a35b-9d5b19a15448" ReceiverAssembly="ETB_TaskApprovalTimerJob, Version=1.0.0.0, Culture=neutral, PublicKeyToken=485bb290741cc96f" ReceiverClass="ETB_TaskApprovalTimerJob.Features.Feature1.Feature1EventReceiver" Scope="WebApplication" Title="ETB_TaskApprovalTimerJob "></Feature>

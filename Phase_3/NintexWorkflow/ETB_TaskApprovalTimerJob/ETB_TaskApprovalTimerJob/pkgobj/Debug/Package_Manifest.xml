@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="7747419e-5f2b-4465-b72f-565c65e78bde" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="ETB_TaskApprovalTimerJob.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="ETB_TaskApprovalTimerJob_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

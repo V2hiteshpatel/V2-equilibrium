@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ETB_DWModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Brand">
+          <Key>
+            <PropertyRef Name="Alternatekey1" />
+          </Key>
+          <Property Name="Alternatekey1" Type="char" MaxLength="3" Nullable="false" />
+          <Property Name="Brand" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Country">
+          <Key>
+            <PropertyRef Name="CountryID" />
+          </Key>
+          <Property Name="CountryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CountryName" Type="varchar" MaxLength="50" />
+          <Property Name="CountryCode" Type="char" MaxLength="3" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'ETB_DW.dbo.Product' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ProductSK" />
+          </Key>
+          <Property Name="ProductSK" Type="int" Nullable="false" />
+          <Property Name="StockCode" Type="varchar" MaxLength="30" />
+          <Property Name="Description" Type="varchar" MaxLength="30" />
+          <Property Name="Brand" Type="varchar" MaxLength="50" />
+          <Property Name="Segment" Type="varchar" MaxLength="20" />
+          <Property Name="BasicSKU" Type="varchar" MaxLength="6" />
+          <Property Name="ProductManager" Type="varchar" MaxLength="50" />
+          <Property Name="ProductClass" Type="varchar" MaxLength="20" />
+          <Property Name="ProductClassDesc" Type="varchar" MaxLength="50" />
+          <Property Name="SupplierPartNumber" Type="varchar" MaxLength="20" />
+          <Property Name="DepartmentName" Type="varchar" MaxLength="50" />
+          <Property Name="DepartmentNumber" Type="int" />
+          <Property Name="CountryCode" Type="char" MaxLength="8" />
+          <Property Name="PalletQty" Type="decimal" Precision="10" Scale="3" />
+          <Property Name="FinishedGoodFlag" Type="varchar" MaxLength="14" />
+          <Property Name="EconomicBatchQty" Type="decimal" Precision="10" Scale="3" />
+          <Property Name="DateSKUAdded" Type="date" />
+          <Property Name="LeadTime" Type="decimal" Precision="3" Scale="0" />
+          <Property Name="UnitOfMeasure" Type="varchar" MaxLength="10" />
+          <Property Name="UnitCost" Type="decimal" Precision="16" Scale="5" />
+          <Property Name="ABCCode" Type="char" MaxLength="1" />
+          <Property Name="FirstSalesOrderDate" Type="date" />
+          <Property Name="FirstSalesOrderQty" Type="decimal" Precision="10" Scale="3" />
+          <Property Name="FirstSalesOrderCust" Type="varchar" MaxLength="30" />
+          <Property Name="LastSalesOrderDate" Type="date" />
+          <Property Name="LastSalesOrderQty" Type="decimal" Precision="10" Scale="3" />
+          <Property Name="LastSalesOrderCust" Type="varchar" MaxLength="30" />
+          <Property Name="LastInvoiceDate" Type="date" />
+          <Property Name="LastInvoiceQty" Type="decimal" Precision="10" Scale="3" />
+          <Property Name="LastInvoiceCust" Type="varchar" MaxLength="30" />
+          <Property Name="AuditIsInferred" Type="bit" />
+          <Property Name="ConvFactAltUom" Type="decimal" Precision="10" Scale="6" />
+          <Property Name="FirstInvoiceDate" Type="date" />
+          <Property Name="FirstInvoiceQty" Type="decimal" Precision="10" Scale="3" />
+          <Property Name="FirstInvoiceCust" Type="varchar" MaxLength="30" />
+          <Property Name="SupplierName" Type="varchar" MaxLength="30" />
+          <Property Name="SupplierContact" Type="varchar" MaxLength="40" />
+          <Property Name="LastPOEntryDate" Type="date" />
+        </EntityType>
+        <EntityType Name="ProductManager">
+          <Key>
+            <PropertyRef Name="ProductManagerSK" />
+          </Key>
+          <Property Name="ProductManagerSK" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ProductManager" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="ETB_DWModelStoreContainer">
+          <EntitySet Name="Brand" EntityType="Self.Brand" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Country" EntityType="Self.Country" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ProductManager" EntityType="Self.ProductManager" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Product" EntityType="Self.Product" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Product].[ProductSK] AS [ProductSK], 
+    [Product].[StockCode] AS [StockCode], 
+    [Product].[Description] AS [Description], 
+    [Product].[Brand] AS [Brand], 
+    [Product].[Segment] AS [Segment], 
+    [Product].[BasicSKU] AS [BasicSKU], 
+    [Product].[ProductManager] AS [ProductManager], 
+    [Product].[ProductClass] AS [ProductClass], 
+    [Product].[ProductClassDesc] AS [ProductClassDesc], 
+    [Product].[SupplierPartNumber] AS [SupplierPartNumber], 
+    [Product].[DepartmentName] AS [DepartmentName], 
+    [Product].[DepartmentNumber] AS [DepartmentNumber], 
+    [Product].[CountryCode] AS [CountryCode], 
+    [Product].[PalletQty] AS [PalletQty], 
+    [Product].[FinishedGoodFlag] AS [FinishedGoodFlag], 
+    [Product].[EconomicBatchQty] AS [EconomicBatchQty], 
+    [Product].[DateSKUAdded] AS [DateSKUAdded], 
+    [Product].[LeadTime] AS [LeadTime], 
+    [Product].[UnitOfMeasure] AS [UnitOfMeasure], 
+    [Product].[UnitCost] AS [UnitCost], 
+    [Product].[ABCCode] AS [ABCCode], 
+    [Product].[FirstSalesOrderDate] AS [FirstSalesOrderDate], 
+    [Product].[FirstSalesOrderQty] AS [FirstSalesOrderQty], 
+    [Product].[FirstSalesOrderCust] AS [FirstSalesOrderCust], 
+    [Product].[LastSalesOrderDate] AS [LastSalesOrderDate], 
+    [Product].[LastSalesOrderQty] AS [LastSalesOrderQty], 
+    [Product].[LastSalesOrderCust] AS [LastSalesOrderCust], 
+    [Product].[LastInvoiceDate] AS [LastInvoiceDate], 
+    [Product].[LastInvoiceQty] AS [LastInvoiceQty], 
+    [Product].[LastInvoiceCust] AS [LastInvoiceCust], 
+    [Product].[AuditIsInferred] AS [AuditIsInferred], 
+    [Product].[ConvFactAltUom] AS [ConvFactAltUom], 
+    [Product].[FirstInvoiceDate] AS [FirstInvoiceDate], 
+    [Product].[FirstInvoiceQty] AS [FirstInvoiceQty], 
+    [Product].[FirstInvoiceCust] AS [FirstInvoiceCust], 
+    [Product].[SupplierName] AS [SupplierName], 
+    [Product].[SupplierContact] AS [SupplierContact], 
+    [Product].[LastPOEntryDate] AS [LastPOEntryDate]
+    FROM [dbo].[Product] AS [Product]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ETB_DWModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Brand">
+          <Key>
+            <PropertyRef Name="Alternatekey1" />
+          </Key>
+          <Property Name="Alternatekey1" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Brand1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Country">
+          <Key>
+            <PropertyRef Name="CountryID" />
+          </Key>
+          <Property Name="CountryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CountryName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CountryCode" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ProductManager">
+          <Key>
+            <PropertyRef Name="ProductManagerSK" />
+          </Key>
+          <Property Name="ProductManagerSK" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProductManager1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ProductSK" />
+          </Key>
+          <Property Name="ProductSK" Type="Int32" Nullable="false" />
+          <Property Name="StockCode" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Brand" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Segment" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="BasicSKU" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="ProductManager" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ProductClass" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ProductClassDesc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="SupplierPartNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DepartmentName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DepartmentNumber" Type="Int32" />
+          <Property Name="CountryCode" Type="String" MaxLength="8" FixedLength="true" Unicode="false" />
+          <Property Name="PalletQty" Type="Decimal" Precision="10" Scale="3" />
+          <Property Name="FinishedGoodFlag" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+          <Property Name="EconomicBatchQty" Type="Decimal" Precision="10" Scale="3" />
+          <Property Name="DateSKUAdded" Type="DateTime" Precision="0" />
+          <Property Name="LeadTime" Type="Decimal" Precision="3" Scale="0" />
+          <Property Name="UnitOfMeasure" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="UnitCost" Type="Decimal" Precision="16" Scale="5" />
+          <Property Name="ABCCode" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="FirstSalesOrderDate" Type="DateTime" Precision="0" />
+          <Property Name="FirstSalesOrderQty" Type="Decimal" Precision="10" Scale="3" />
+          <Property Name="FirstSalesOrderCust" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="LastSalesOrderDate" Type="DateTime" Precision="0" />
+          <Property Name="LastSalesOrderQty" Type="Decimal" Precision="10" Scale="3" />
+          <Property Name="LastSalesOrderCust" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="LastInvoiceDate" Type="DateTime" Precision="0" />
+          <Property Name="LastInvoiceQty" Type="Decimal" Precision="10" Scale="3" />
+          <Property Name="LastInvoiceCust" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="AuditIsInferred" Type="Boolean" />
+          <Property Name="ConvFactAltUom" Type="Decimal" Precision="10" Scale="6" />
+          <Property Name="FirstInvoiceDate" Type="DateTime" Precision="0" />
+          <Property Name="FirstInvoiceQty" Type="Decimal" Precision="10" Scale="3" />
+          <Property Name="FirstInvoiceCust" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="SupplierName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="SupplierContact" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="LastPOEntryDate" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityContainer Name="ETB_DWEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Brand" EntityType="Self.Brand" />
+          <EntitySet Name="Country" EntityType="Self.Country" />
+          <EntitySet Name="ProductManager" EntityType="Self.ProductManager" />
+          <EntitySet Name="Product" EntityType="Self.Product" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ETB_DWModelStoreContainer" CdmEntityContainer="ETB_DWEntities">
+          <EntitySetMapping Name="Brand">
+            <EntityTypeMapping TypeName="ETB_DWModel.Brand">
+              <MappingFragment StoreEntitySet="Brand">
+                <ScalarProperty Name="Alternatekey1" ColumnName="Alternatekey1" />
+                <ScalarProperty Name="Brand1" ColumnName="Brand" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Country">
+            <EntityTypeMapping TypeName="ETB_DWModel.Country">
+              <MappingFragment StoreEntitySet="Country">
+                <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+                <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+                <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProductManager">
+            <EntityTypeMapping TypeName="ETB_DWModel.ProductManager">
+              <MappingFragment StoreEntitySet="ProductManager">
+                <ScalarProperty Name="ProductManagerSK" ColumnName="ProductManagerSK" />
+                <ScalarProperty Name="ProductManager1" ColumnName="ProductManager" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Product">
+            <EntityTypeMapping TypeName="ETB_DWModel.Product">
+              <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="ProductSK" ColumnName="ProductSK" />
+                <ScalarProperty Name="StockCode" ColumnName="StockCode" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Brand" ColumnName="Brand" />
+                <ScalarProperty Name="Segment" ColumnName="Segment" />
+                <ScalarProperty Name="BasicSKU" ColumnName="BasicSKU" />
+                <ScalarProperty Name="ProductManager" ColumnName="ProductManager" />
+                <ScalarProperty Name="ProductClass" ColumnName="ProductClass" />
+                <ScalarProperty Name="ProductClassDesc" ColumnName="ProductClassDesc" />
+                <ScalarProperty Name="SupplierPartNumber" ColumnName="SupplierPartNumber" />
+                <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+                <ScalarProperty Name="DepartmentNumber" ColumnName="DepartmentNumber" />
+                <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+                <ScalarProperty Name="PalletQty" ColumnName="PalletQty" />
+                <ScalarProperty Name="FinishedGoodFlag" ColumnName="FinishedGoodFlag" />
+                <ScalarProperty Name="EconomicBatchQty" ColumnName="EconomicBatchQty" />
+                <ScalarProperty Name="DateSKUAdded" ColumnName="DateSKUAdded" />
+                <ScalarProperty Name="LeadTime" ColumnName="LeadTime" />
+                <ScalarProperty Name="UnitOfMeasure" ColumnName="UnitOfMeasure" />
+                <ScalarProperty Name="UnitCost" ColumnName="UnitCost" />
+                <ScalarProperty Name="ABCCode" ColumnName="ABCCode" />
+                <ScalarProperty Name="FirstSalesOrderDate" ColumnName="FirstSalesOrderDate" />
+                <ScalarProperty Name="FirstSalesOrderQty" ColumnName="FirstSalesOrderQty" />
+                <ScalarProperty Name="FirstSalesOrderCust" ColumnName="FirstSalesOrderCust" />
+                <ScalarProperty Name="LastSalesOrderDate" ColumnName="LastSalesOrderDate" />
+                <ScalarProperty Name="LastSalesOrderQty" ColumnName="LastSalesOrderQty" />
+                <ScalarProperty Name="LastSalesOrderCust" ColumnName="LastSalesOrderCust" />
+                <ScalarProperty Name="LastInvoiceDate" ColumnName="LastInvoiceDate" />
+                <ScalarProperty Name="LastInvoiceQty" ColumnName="LastInvoiceQty" />
+                <ScalarProperty Name="LastInvoiceCust" ColumnName="LastInvoiceCust" />
+                <ScalarProperty Name="AuditIsInferred" ColumnName="AuditIsInferred" />
+                <ScalarProperty Name="ConvFactAltUom" ColumnName="ConvFactAltUom" />
+                <ScalarProperty Name="FirstInvoiceDate" ColumnName="FirstInvoiceDate" />
+                <ScalarProperty Name="FirstInvoiceQty" ColumnName="FirstInvoiceQty" />
+                <ScalarProperty Name="FirstInvoiceCust" ColumnName="FirstInvoiceCust" />
+                <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+                <ScalarProperty Name="SupplierContact" ColumnName="SupplierContact" />
+                <ScalarProperty Name="LastPOEntryDate" ColumnName="LastPOEntryDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

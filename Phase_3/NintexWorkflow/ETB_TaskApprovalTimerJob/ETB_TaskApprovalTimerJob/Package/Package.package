@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="7747419e-5f2b-4465-b72f-565c65e78bde" solutionId="7747419e-5f2b-4465-b72f-565c65e78bde" resetWebServer="false" sharePointProductVersion="15.0" name="ETB_TaskApprovalTimerJob" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="1d41bd5c-fd6d-4d4a-829a-74ec5c042b2e" />
+  </features>
+</package>
