@@ -1,0 +1,6 @@
+D:\Row Data\FileMigration\FileMigration\bin\Debug\FileMigration.dll
+D:\Row Data\FileMigration\FileMigration\bin\Debug\FileMigration.pdb
+D:\Row Data\FileMigration\FileMigration\obj\Debug\FileMigration.csprojResolveAssemblyReference.cache
+D:\Row Data\FileMigration\FileMigration\obj\Debug\FileMigration.dll
+D:\Row Data\FileMigration\FileMigration\obj\Debug\FileMigration.pdb
+D:\Row Data\FileMigration\FileMigration\bin\Debug\FileMigration.dll.config

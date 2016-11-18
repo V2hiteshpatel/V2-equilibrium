@@ -1,0 +1,4 @@
+D:\Row Data\FileMigration\FileMigration\bin\x86\Debug\FileMigration.dll
+D:\Row Data\FileMigration\FileMigration\bin\x86\Debug\FileMigration.pdb
+D:\Row Data\FileMigration\FileMigration\obj\x86\Debug\FileMigration.dll
+D:\Row Data\FileMigration\FileMigration\obj\x86\Debug\FileMigration.pdb

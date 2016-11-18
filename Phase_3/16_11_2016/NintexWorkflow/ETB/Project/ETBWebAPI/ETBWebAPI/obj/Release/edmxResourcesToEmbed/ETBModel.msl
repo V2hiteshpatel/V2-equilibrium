@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ETB_DWModelStoreContainer" CdmEntityContainer="ETB_DWEntities">
+    <EntitySetMapping Name="Brand">
+      <EntityTypeMapping TypeName="ETB_DWModel.Brand">
+        <MappingFragment StoreEntitySet="Brand">
+          <ScalarProperty Name="Alternatekey1" ColumnName="Alternatekey1" />
+          <ScalarProperty Name="Brand1" ColumnName="Brand" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Country">
+      <EntityTypeMapping TypeName="ETB_DWModel.Country">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductManager">
+      <EntityTypeMapping TypeName="ETB_DWModel.ProductManager">
+        <MappingFragment StoreEntitySet="ProductManager">
+          <ScalarProperty Name="ProductManagerSK" ColumnName="ProductManagerSK" />
+          <ScalarProperty Name="ProductManager1" ColumnName="ProductManager" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product">
+      <EntityTypeMapping TypeName="ETB_DWModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="ProductSK" ColumnName="ProductSK" />
+          <ScalarProperty Name="StockCode" ColumnName="StockCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Brand" ColumnName="Brand" />
+          <ScalarProperty Name="Segment" ColumnName="Segment" />
+          <ScalarProperty Name="BasicSKU" ColumnName="BasicSKU" />
+          <ScalarProperty Name="ProductManager" ColumnName="ProductManager" />
+          <ScalarProperty Name="ProductClass" ColumnName="ProductClass" />
+          <ScalarProperty Name="ProductClassDesc" ColumnName="ProductClassDesc" />
+          <ScalarProperty Name="SupplierPartNumber" ColumnName="SupplierPartNumber" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="DepartmentNumber" ColumnName="DepartmentNumber" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="PalletQty" ColumnName="PalletQty" />
+          <ScalarProperty Name="FinishedGoodFlag" ColumnName="FinishedGoodFlag" />
+          <ScalarProperty Name="EconomicBatchQty" ColumnName="EconomicBatchQty" />
+          <ScalarProperty Name="DateSKUAdded" ColumnName="DateSKUAdded" />
+          <ScalarProperty Name="LeadTime" ColumnName="LeadTime" />
+          <ScalarProperty Name="UnitOfMeasure" ColumnName="UnitOfMeasure" />
+          <ScalarProperty Name="UnitCost" ColumnName="UnitCost" />
+          <ScalarProperty Name="ABCCode" ColumnName="ABCCode" />
+          <ScalarProperty Name="FirstSalesOrderDate" ColumnName="FirstSalesOrderDate" />
+          <ScalarProperty Name="FirstSalesOrderQty" ColumnName="FirstSalesOrderQty" />
+          <ScalarProperty Name="FirstSalesOrderCust" ColumnName="FirstSalesOrderCust" />
+          <ScalarProperty Name="LastSalesOrderDate" ColumnName="LastSalesOrderDate" />
+          <ScalarProperty Name="LastSalesOrderQty" ColumnName="LastSalesOrderQty" />
+          <ScalarProperty Name="LastSalesOrderCust" ColumnName="LastSalesOrderCust" />
+          <ScalarProperty Name="LastInvoiceDate" ColumnName="LastInvoiceDate" />
+          <ScalarProperty Name="LastInvoiceQty" ColumnName="LastInvoiceQty" />
+          <ScalarProperty Name="LastInvoiceCust" ColumnName="LastInvoiceCust" />
+          <ScalarProperty Name="AuditIsInferred" ColumnName="AuditIsInferred" />
+          <ScalarProperty Name="ConvFactAltUom" ColumnName="ConvFactAltUom" />
+          <ScalarProperty Name="FirstInvoiceDate" ColumnName="FirstInvoiceDate" />
+          <ScalarProperty Name="FirstInvoiceQty" ColumnName="FirstInvoiceQty" />
+          <ScalarProperty Name="FirstInvoiceCust" ColumnName="FirstInvoiceCust" />
+          <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+          <ScalarProperty Name="SupplierContact" ColumnName="SupplierContact" />
+          <ScalarProperty Name="LastPOEntryDate" ColumnName="LastPOEntryDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

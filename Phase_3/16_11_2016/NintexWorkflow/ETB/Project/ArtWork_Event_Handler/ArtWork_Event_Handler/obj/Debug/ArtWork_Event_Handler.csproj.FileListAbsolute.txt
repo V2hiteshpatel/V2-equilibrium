@@ -1,0 +1,19 @@
+D:\Data\Bhavna\Equilibrium\Docs\Project Doc\Projects\ArtWork_Event_Handler\ArtWork_Event_Handler\bin\Debug\ArtWork_Event_Handler.dll
+D:\Data\Bhavna\Equilibrium\Docs\Project Doc\Projects\ArtWork_Event_Handler\ArtWork_Event_Handler\bin\Debug\ArtWork_Event_Handler.pdb
+D:\Data\Bhavna\Equilibrium\Docs\Project Doc\Projects\ArtWork_Event_Handler\ArtWork_Event_Handler\obj\Debug\ArtWork_Event_Handler.dll
+D:\Data\Bhavna\Equilibrium\Docs\Project Doc\Projects\ArtWork_Event_Handler\ArtWork_Event_Handler\obj\Debug\ArtWork_Event_Handler.pdb
+D:\Hitesh\Equilibrium\ArtWork_Event_Handler\ArtWork_Event_Handler\bin\Debug\ArtWork_Event_Handler.dll
+D:\Hitesh\Equilibrium\ArtWork_Event_Handler\ArtWork_Event_Handler\bin\Debug\ArtWork_Event_Handler.pdb
+D:\Hitesh\Equilibrium\ArtWork_Event_Handler\ArtWork_Event_Handler\obj\Debug\ArtWork_Event_Handler.csprojResolveAssemblyReference.cache
+D:\Hitesh\Equilibrium\ArtWork_Event_Handler\ArtWork_Event_Handler\obj\Debug\ArtWork_Event_Handler.dll
+D:\Hitesh\Equilibrium\ArtWork_Event_Handler\ArtWork_Event_Handler\obj\Debug\ArtWork_Event_Handler.pdb
+D:\ArtWork_Event_Handler\ArtWork_Event_Handler\bin\Debug\ArtWork_Event_Handler.dll
+D:\ArtWork_Event_Handler\ArtWork_Event_Handler\bin\Debug\ArtWork_Event_Handler.pdb
+D:\ArtWork_Event_Handler\ArtWork_Event_Handler\obj\Debug\ArtWork_Event_Handler.csprojResolveAssemblyReference.cache
+D:\ArtWork_Event_Handler\ArtWork_Event_Handler\obj\Debug\ArtWork_Event_Handler.dll
+D:\ArtWork_Event_Handler\ArtWork_Event_Handler\obj\Debug\ArtWork_Event_Handler.pdb
+D:\ETB\Project\ArtWork_Event_Handler\ArtWork_Event_Handler\bin\Debug\ArtWork_Event_Handler.dll
+D:\ETB\Project\ArtWork_Event_Handler\ArtWork_Event_Handler\bin\Debug\ArtWork_Event_Handler.pdb
+D:\ETB\Project\ArtWork_Event_Handler\ArtWork_Event_Handler\obj\Debug\ArtWork_Event_Handler.csprojResolveAssemblyReference.cache
+D:\ETB\Project\ArtWork_Event_Handler\ArtWork_Event_Handler\obj\Debug\ArtWork_Event_Handler.dll
+D:\ETB\Project\ArtWork_Event_Handler\ArtWork_Event_Handler\obj\Debug\ArtWork_Event_Handler.pdb

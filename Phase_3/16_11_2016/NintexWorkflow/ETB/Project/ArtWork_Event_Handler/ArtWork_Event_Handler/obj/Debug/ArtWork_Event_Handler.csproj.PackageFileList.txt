@@ -1,0 +1,1 @@
+bin\Debug\ArtWork_Event_Handler.wsp

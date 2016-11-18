@@ -1,0 +1,9 @@
+D:\ETB_TaskEventHandler\ETBEventHandler\ETBEventHandler\ETBEventHandler\bin\Debug\ETBEventHandler.dll
+D:\ETB_TaskEventHandler\ETBEventHandler\ETBEventHandler\ETBEventHandler\bin\Debug\ETBEventHandler.pdb
+D:\ETB_TaskEventHandler\ETBEventHandler\ETBEventHandler\ETBEventHandler\obj\Debug\ETBEventHandler.dll
+D:\ETB_TaskEventHandler\ETBEventHandler\ETBEventHandler\ETBEventHandler\obj\Debug\ETBEventHandler.pdb
+D:\ETB\Project\ETB_DueDateEventHandler\ETBEventHandler\bin\Debug\ETBEventHandler.dll
+D:\ETB\Project\ETB_DueDateEventHandler\ETBEventHandler\bin\Debug\ETBEventHandler.pdb
+D:\ETB\Project\ETB_DueDateEventHandler\ETBEventHandler\obj\Debug\ETBEventHandler.dll
+D:\ETB\Project\ETB_DueDateEventHandler\ETBEventHandler\obj\Debug\ETBEventHandler.pdb
+D:\ETB\Project\ETB_DueDateEventHandler\ETBEventHandler\obj\Debug\ETBEventHandler.csprojResolveAssemblyReference.cache

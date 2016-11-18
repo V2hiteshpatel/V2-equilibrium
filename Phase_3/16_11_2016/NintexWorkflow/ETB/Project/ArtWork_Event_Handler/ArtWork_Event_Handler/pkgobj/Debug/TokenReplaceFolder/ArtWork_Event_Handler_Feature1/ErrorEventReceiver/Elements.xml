@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers ListTemplateId="101">
+      <Receiver>
+        <Name>ErrorEventReceiverWorkflowCompleted</Name>
+        <Type>WorkflowCompleted</Type>
+        <Assembly>ArtWork_Event_Handler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e529ff57d9a4736b</Assembly>
+        <Class>ArtWork_Event_Handler.ErrorEventReceiver.ErrorEventReceiver</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+  </Receivers>
+</Elements>

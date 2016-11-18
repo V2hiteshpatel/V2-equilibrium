@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="3910c23a-2dec-4df3-ba6f-c33277d9408f" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="ArtWork_Event_Handler.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="ArtWork_Event_Handler_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="a447d5c5-9fc6-49b5-abdf-d97595721333" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="FileMigration.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\FileMigration\Migrate.aspx" />
+  </TemplateFiles>
+</Solution>

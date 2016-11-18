@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="a9be0540-aba7-41d0-ac58-396526b8fff8" Scope="Web" Title="ETBEventHandler Feature1">
+  <ElementManifests>
+    <ElementManifest Location="TaskEventHandler\Elements.xml" />
+  </ElementManifests>
+</Feature>

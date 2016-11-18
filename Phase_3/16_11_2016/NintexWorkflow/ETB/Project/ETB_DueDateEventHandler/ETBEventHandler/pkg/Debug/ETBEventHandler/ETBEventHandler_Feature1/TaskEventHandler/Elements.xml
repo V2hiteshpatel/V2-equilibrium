@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!--<Receivers ListTemplateId="171">-->
+  <Receivers ListTemplateId="107">
+      <Receiver>
+        <Name>TaskEventHandlerItemAdding</Name>
+        <Type>ItemAdding</Type>
+        <Assembly>ETBEventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7382f6fa0ec42207</Assembly>
+        <Class>ETBEventHandler.TaskEventHandler.TaskEventHandler</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>TaskEventHandlerItemUpdating</Name>
+        <Type>ItemUpdating</Type>
+        <Assembly>ETBEventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7382f6fa0ec42207</Assembly>
+        <Class>ETBEventHandler.TaskEventHandler.TaskEventHandler</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>TaskEventHandlerItemAdded</Name>
+        <Type>ItemAdded</Type>
+        <Assembly>ETBEventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7382f6fa0ec42207</Assembly>
+        <Class>ETBEventHandler.TaskEventHandler.TaskEventHandler</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>TaskEventHandlerItemUpdated</Name>
+        <Type>ItemUpdated</Type>
+        <Assembly>ETBEventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7382f6fa0ec42207</Assembly>
+        <Class>ETBEventHandler.TaskEventHandler.TaskEventHandler</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+  </Receivers>
+</Elements>

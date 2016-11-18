@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="3910c23a-2dec-4df3-ba6f-c33277d9408f" solutionId="3910c23a-2dec-4df3-ba6f-c33277d9408f" resetWebServer="false" name="ArtWork_Event_Handler" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="968552ab-1f9d-4ce8-87eb-d2870a085e84" />
+  </features>
+</package>
